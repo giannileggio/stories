@@ -1,0 +1,10 @@
+{{outlet}}
+<h4>stories</h4>
+
+{{model}}
+
+{{#each story in model}}
+  <h3>{{story.title}}</h3>
+{{else}}
+  No stories
+{{/each}}
