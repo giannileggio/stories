@@ -1,12 +1,10 @@
 {{outlet}}
 <h4>stories</h4>
 
-{{log model}}
-
 <ul>
   {{#each model as |story index|}}
     <li>
-      {{index}} - {{story.title}}
+      {{index}} - {{#link-to 'stories.show' story}}{{story.title}}{{/link-to}}
     </li>
   {{else}}
     No stories
