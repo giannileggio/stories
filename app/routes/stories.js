@@ -10,5 +10,5 @@ export default Ember.Route.extend({
         // self.store.push(self.store.normalize('story', response.stories));
       }
     );
-  }
+  },
 });
