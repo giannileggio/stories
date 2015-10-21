@@ -5,7 +5,7 @@ export default Ember.Route.extend({
     let self = this;
     return $.getJSON('stories.json').then(
       function(response) {
-        return response.stories;
+        return response.stories.slice(0, 10);
         // debugger;
         // self.store.push(self.store.normalize('story', response.stories));
       }
